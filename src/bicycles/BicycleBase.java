@@ -1,10 +1,12 @@
 package bicycles;
 
 public abstract class BicycleBase implements Bicycle {
-protected int speed = 0;
-    protected int changeSpeed(){
-        return   speed+=speed;
+    private int speed = 0;
+
+    protected void speedChange(int changeSpeed){
+           speed+=changeSpeed;
     }
+
     public int currentSpeed(){
         return speed;
     }

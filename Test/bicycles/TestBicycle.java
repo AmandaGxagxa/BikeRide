@@ -15,7 +15,7 @@ public class TestBicycle {
 
     }
     @Test
-    public void shouldAccelerateAndBrakeCorrect() {
+    public void shouldAccelerateAndBrakeCorrectForMountainBike() {
 
         Bicycle bicycle = new MountainBike();
         bicycle.accelerate();
@@ -70,11 +70,27 @@ public void shouldReturnAccelerateForRoadBike(){
         Bicycle bicycle = new RoadBike();
         bicycle.accelerate();
         bicycle.brake();
-        bicycle.stop();
-        bicycle.brake();
-        bicycle.brake();
 
+        bicycle.brake();
+        bicycle.brake();
+        bicycle.stop();
+        //bicycle.stop();
         assertEquals(0, bicycle.currentSpeed());
+        System.out.println(bicycle.currentSpeed());
+    }
+    @Test
+    public void  itShouldAccelerateTandemCorrectly(){
+        Bicycle bicycle = new Tandem();
+        bicycle.accelerate();
+        assertEquals(12, bicycle.currentSpeed());
+        System.out.println(bicycle.currentSpeed());
+    }
+    @Test
+    public void  itShouldAccelerateAndBrakeWithTandemCorrectly(){
+        Bicycle bicycle = new Tandem();
+        bicycle.accelerate();
+        bicycle.brake();
+        assertEquals(7, bicycle.currentSpeed());
         System.out.println(bicycle.currentSpeed());
     }
 }
