@@ -12,6 +12,11 @@ public class RoadBike extends BicycleBase {
 
         }
 
+    @Override
+    public int ride(Bicycle bicycle) {
+        return Bicycle.speed;
+    }
+
 
     public static void main(String[] args) {
         Bicycle bicycle = new RoadBike();

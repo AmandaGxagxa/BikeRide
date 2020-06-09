@@ -10,7 +10,12 @@ public class MountainBike extends BicycleBase{
         public void brake( ) {
           speedChange(-3);
             }
-            //System.out.println("your current speed is : " + speed);
+
+    @Override
+    public int ride(Bicycle bicycle) {
+        return Bicycle.speed;
+    }
+    //System.out.println("your current speed is : " + speed);
         };
 
 

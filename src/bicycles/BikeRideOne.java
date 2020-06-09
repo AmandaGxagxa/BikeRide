@@ -1,17 +1,12 @@
 package bicycles;
 
 public class BikeRideOne implements BikeRide {
-        private int speed;
+        //private int speed;
         private Bicycle bicycle;
 
-//        void BikeRide(Bicycle bicycle)
-//        {
-//            this.bicycle  = bicycle;
+//        public int currentSpeed(){
+//            return speed;
 //        }
-
-        public int currentSpeed(){
-            return speed;
-        }
 
         public void ride(Bicycle bicycle) {
             this.bicycle.accelerate();
