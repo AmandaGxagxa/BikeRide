@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestBicycle {
-
     @Test
     public void shouldReturnAccelerateForMountainBike() {
         Bicycle bicycle = new MountainBike();
@@ -97,11 +96,29 @@ public void shouldReturnAccelerateForRoadBike(){
     @Test
     public void  itShouldAccelerateBikeRideOne(){
         Bicycle bicycle = new MountainBike();
-        bicycles.BikeRideOne bikeRideOne = new bicycles.BikeRideOne();
+        BikeRideOne bikeRideOne = new bicycles.BikeRideOne(bicycle);
         bikeRideOne.ride(bicycle);
-        bicycle.accelerate();
-        bicycle.brake();
-        assertEquals(2, bikeRideOne.ride());
+//        bicycle.accelerate();
+//        bicycle.brake();
+        assertEquals(14, bicycle.currentSpeed());
+        System.out.println(bicycle.currentSpeed());
+    }
+    @Test
+    public void  itShouldAccelerateBikeRideTwo(){
+        Bicycle bicycle = new MountainBike();
+        BikeRideTwo bikeRideTwo = new bicycles.BikeRideTwo(bicycle);
+        bikeRideTwo.ride(bicycle);
+//        bicycle.accelerate();
+//        bicycle.brake();
+        assertEquals(9, bicycle.currentSpeed());
+        System.out.println(bicycle.currentSpeed());
+    }
+    @Test
+    public void  itShouldAccelerateBikeRideThree(){
+        Bicycle bicycle = new MountainBike();
+        BikeRideThree bikeRideThree = new bicycles.BikeRideThree(bicycle);
+        bikeRideThree.ride(bicycle);
+        assertEquals(9, bicycle.currentSpeed());
         System.out.println(bicycle.currentSpeed());
     }
 }

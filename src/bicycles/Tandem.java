@@ -13,6 +13,6 @@ speedChange(-5);
 
     @Override
     public int ride(Bicycle bicycle) {
-        return 0;
+        return Bicycle.speed;
     }
 }

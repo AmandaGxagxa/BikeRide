@@ -1,13 +1,12 @@
 package bicycles;
 
 public class BikeRideOne implements BikeRide {
-        //private int speed;
+        private int speed;
         private Bicycle bicycle;
 
-//        public int currentSpeed(){
-//            return speed;
-//        }
-
+        BikeRideOne(Bicycle bicycle){
+        this.bicycle=bicycle;
+        }
         public void ride(Bicycle bicycle) {
             this.bicycle.accelerate();
             this.bicycle.accelerate();
@@ -16,13 +15,18 @@ public class BikeRideOne implements BikeRide {
             this.bicycle.brake();
             this.bicycle.accelerate();
         }
+    private int currentSpeed( ) {
+        return speed;
+    }
         public static void main(String [] args){
             Bicycle bicycle = new MountainBike();
-            bicycles.BikeRideOne bikeRideOne = new bicycles.BikeRideOne();
+            BikeRideOne bikeRideOne = new bicycles.BikeRideOne(bicycle);
+            bikeRideOne.ride(bicycle);
             bikeRideOne.ride(bicycle);
 
-            System.out.println(bicycle.currentSpeed());
+           System.out.println(bikeRideOne.currentSpeed());
         }
+
 
 
 

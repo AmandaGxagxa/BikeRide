@@ -1,29 +1,32 @@
 package bicycles;
 
 public class BikeRideTwo implements BikeRide {
-   // private int speed;
+    private int speed;
     private Bicycle bicycle;
 
-//    public int currentSpeed(){
-//        return speed;
-//    }
+    BikeRideTwo(Bicycle bicycle){
+        this.bicycle=bicycle;
+    }
 
     public void ride(Bicycle bicycle) {
         this.bicycle.accelerate();
         this.bicycle.accelerate();
-        this.bicycle.accelerate();
+//        this.bicycle.accelerate();
         this.bicycle.brake();
         this.bicycle.brake();
         this.bicycle.accelerate();
     }
-
+    private int currentSpeed( ) {
+        return speed;
+    }
     public static void main(String [] args){
         Bicycle bicycle = new MountainBike();
-        bicycles.BikeRideTwo bikeRideTwo = new bicycles.BikeRideTwo();
+        BikeRideTwo bikeRideTwo = new bicycles.BikeRideTwo(bicycle);
         bikeRideTwo.ride(bicycle);
 
-        System.out.println(bicycle.ride(bicycle));
+        System.out.println(bikeRideTwo.currentSpeed());
     }
+
 
 
 

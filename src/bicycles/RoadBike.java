@@ -19,10 +19,12 @@ public class RoadBike extends BicycleBase {
 
 
     public static void main(String[] args) {
-        Bicycle bicycle = new RoadBike();
-        bicycle.accelerate();
-        bicycle.brake();
-        bicycle.currentSpeed();
+        BicycleSpecification roadBikeSpec = new BicycleSpecification(11, 4);
+        Bicycle bicycle = new BicycleFromSpec(roadBikeSpec);
+//        Bicycle bicycle = new RoadBike();
+//        bicycle.accelerate();
+//        bicycle.brake();
+//        bicycle.currentSpeed();
     }
 
 
