@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1adbd0d-3a17-43e2-a27f-2bb012ef5bf7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bicycles/BicycleFromSpec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bicycles/BicycleSpecification.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/bicycles/TestBicycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/bicycles/TestBicycle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BikeRide/bicycles/BikeRideOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BikeRide/bicycles/BikeRideOne.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BikeRide/bicycles/BikeRideThree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BikeRide/bicycles/BikeRideThree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BikeRide/bicycles/BikeRideTwo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BikeRide/bicycles/BikeRideTwo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BikeRide/bicycles/Tandem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BikeRide/bicycles/Tandem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/BikeRide/bicycles/TestBicycle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/BikeRide/bicycles/TestBicycle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/BikeRideOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bicycles/BikeRideOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/BikeRideThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bicycles/BikeRideThree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/BikeRideTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bicycles/BikeRideTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/RoadBike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bicycles/RoadBike.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/Tandem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bicycles/Tandem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bicycles/BicycleFromSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bicycles/BicycleFromSpec.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +42,9 @@
       <recent name="bicycles" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestBicycle">
-    <configuration name="BikeRideThree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bicycles.BikeRideThree" />
+  <component name="RunManager" selected="Application.BicycleFromSpec">
+    <configuration name="BicycleFromSpec" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bicycles.BicycleFromSpec" />
       <module name="BikeRide" />
       <extension name="coverage">
         <pattern>
@@ -130,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BicycleFromSpec" />
         <item itemvalue="JUnit.TestBicycle" />
         <item itemvalue="JUnit.TestBicycle.itShouldAccelerateBikeRideThree" />
         <item itemvalue="JUnit.TestBicycle.itShouldAccelerateBikeRideTwo" />
         <item itemvalue="Application.BikeRideTwo" />
-        <item itemvalue="Application.BikeRideThree" />
       </list>
     </recent_temporary>
   </component>
