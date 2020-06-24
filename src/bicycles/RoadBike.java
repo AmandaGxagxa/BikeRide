@@ -12,20 +12,12 @@ public class RoadBike extends BicycleBase {
 
         }
 
-    @Override
-    public int ride(Bicycle bicycle) {
-        return Bicycle.speed;
-    }
 
-
-    public static void main(String[] args) {
-        BicycleSpecification roadBikeSpec = new BicycleSpecification(11, 4);
-        Bicycle bicycle = new BicycleFromSpec(roadBikeSpec);
-//        Bicycle bicycle = new RoadBike();
-//        bicycle.accelerate();
-//        bicycle.brake();
-//        bicycle.currentSpeed();
-    }
+//    public static void main(String[] args) {
+//        BicycleSpecification roadBikeSpec = new BicycleSpecification(11, 4);
+//        Bicycle bicycle = new BicycleFromSpec(roadBikeSpec);
+//        System.out.println(Bicycle.speed);
+//    }
 
 
 }

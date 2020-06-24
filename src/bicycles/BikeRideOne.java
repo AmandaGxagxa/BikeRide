@@ -9,15 +9,16 @@ public class BikeRideOne implements BikeRide {
         }
         public void ride(Bicycle bicycle) {
             this.bicycle.accelerate();
-            this.bicycle.accelerate();
-            this.bicycle.accelerate();
+//            this.bicycle.accelerate();
+//            this.bicycle.accelerate();
+//            this.bicycle.brake();
             this.bicycle.brake();
-            this.bicycle.brake();
-            this.bicycle.accelerate();
+//            this.bicycle.accelerate();
         }
-    private int currentSpeed( ) {
+    public int currentSpeed( ) {
         return speed;
     }
+
         public static void main(String [] args){
             Bicycle bicycle = new MountainBike();
             BikeRideOne bikeRideOne = new bicycles.BikeRideOne(bicycle);

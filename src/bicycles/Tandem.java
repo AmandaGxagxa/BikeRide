@@ -8,11 +8,8 @@ public class Tandem extends BicycleBase {
 
     @Override
     public void brake( ) {
-speedChange(-5);
+    speedChange(-5);
     }
 
-    @Override
-    public int ride(Bicycle bicycle) {
-        return Bicycle.speed;
-    }
+
 }

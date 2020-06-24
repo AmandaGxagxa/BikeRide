@@ -121,4 +121,51 @@ public void shouldReturnAccelerateForRoadBike(){
         assertEquals(9, bicycle.currentSpeed());
         System.out.println(bicycle.currentSpeed());
     }
+    @Test
+    public void itshouldTestBicycleSpecificationTandem(){
+        BicycleSpecification bicycle = new BicycleSpecification(BicycleType.Tandem);
+        bicycle.getBicycleType();
+        assertEquals(BicycleType.Tandem, bicycle.getBicycleType());
+    }
+    @Test
+    public void itshouldTestBicycleSpecificationForMountainBike(){
+        BicycleSpecification bicycle = new BicycleSpecification(BicycleType.MountainBike);
+        bicycle.getBicycleType();
+        assertEquals(BicycleType.MountainBike, bicycle.getBicycleType());
+    }
+    @Test
+    public void itshouldTestBicycleSpecificationForRoadBike(){
+        BicycleSpecification bicycle = new BicycleSpecification(BicycleType.RoadBike);
+        bicycle.getBicycleType();
+        assertEquals(BicycleType.RoadBike, bicycle.getBicycleType());
+    }
+    @Test
+    public void itshouldTestBikeSpecSpeedForMountainBike(){
+        BicycleSpecification bikeSpecForMb = new BicycleSpecification(BicycleType.MountainBike);
+        Bicycle mb = new BicycleFromSpec(bikeSpecForMb);
+
+        BikeRideOne Mbike = new BikeRideOne(mb);
+        Mbike.ride(mb);
+        assertEquals(2, mb.currentSpeed());
+
+    }
+    @Test
+    public void itshouldTestBikeSpecSpeedForTandem(){
+        BicycleSpecification bikeSpecForMb = new BicycleSpecification(BicycleType.Tandem);
+        Bicycle mb = new BicycleFromSpec(bikeSpecForMb);
+
+        BikeRideOne Mbike = new BikeRideOne(mb);
+        Mbike.ride(mb);
+        assertEquals(7, mb.currentSpeed());
+    }
+    @Test
+    public void itshouldTestBikeSpecSpeedForRoadBike(){
+        BicycleSpecification bikeSpecForMb = new BicycleSpecification(BicycleType.RoadBike);
+        Bicycle mb = new BicycleFromSpec(bikeSpecForMb);
+
+        BikeRideOne Mbike = new BikeRideOne(mb);
+        Mbike.ride(mb);
+        assertEquals(7, mb.currentSpeed());
+    }
 }
+

@@ -7,7 +7,8 @@ public interface Bicycle {
     public void brake();
     public void stop();
     public int currentSpeed();
-    public int ride(Bicycle bicycle);
+
+    public void add(Bicycle bicycle);
 };
 
 
